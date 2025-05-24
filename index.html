@@ -1,0 +1,345 @@
+<html>
+
+<head>
+    <title>Bungasky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/Biodata/Bungasky.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+    <script>
+        function showContent(contentId) {
+            // Sembunyikan semua konten
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+
+            // Tampilkan konten yang dipilih
+            document.getElementById(contentId).style.display = 'block';
+        }
+
+        function keluar() {
+            // Kembali ke tampilan awal (Biodata Diri)
+            showContent('biodata');
+        }
+        window.onload = function () {
+            showContent('biodata');
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="/Biodata/Bungasky.jpg" alt="Bunga Rahmadani" class="profile-image">
+            <h1 class="profile-name">Bunga Rahmadani</h1>
+            <p class="profile-subtitle">Mahasiswi | Content Creator | Tech Enthusiast</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-tabs">
+            <div class="nav-tab active" onclick="showSection('about')">
+                <i class="fas fa-user"></i> Tentang Saya
+            </div>
+            <div class="nav-tab" onclick="showSection('biodata')">
+                <i class="fas fa-id-card"></i> Biodata
+            </div>
+            <div class="nav-tab" onclick="showSection('education')">
+                <i class="fas fa-graduation-cap"></i> Pendidikan
+            </div>
+            <div class="nav-tab" onclick="showSection('skills')">
+                <i class="fas fa-cogs"></i> Skills
+            </div>
+            <div class="nav-tab" onclick="showSection('hobbies')">
+                <i class="fas fa-heart"></i> Hobi
+            </div>
+            <div class="nav-tab" onclick="showSection('photo')">
+                <i class="fas fa-camera"></i> Foto
+            </div>
+            <div class="nav-tab" onclick="showSection('contact')">
+                <i class="fas fa-envelope"></i> Kontak
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+
+        <!-- About Section -->
+        <div class="content-section active" id="about">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-user-circle"></i>
+                    Tentang Saya
+                </h2>
+                <p class="about-text">
+                    Halo! Saya Bunga Rahmadani, seorang mahasiswa yang passionate dalam dunia teknologi dan kreatif.
+                    Saya lahir dan besar di Rejosari, Jambi, dan saat ini sedang menempuh pendidikan di Universitas
+                    Negeri Padang.
+                    Saya memiliki minat yang besar dalam pengembangan web, desain, dan konten kreatif.
+                    Dengan semangat belajar yang tinggi, saya selalu berusaha untuk mengembangkan diri dan berkontribusi
+                    positif
+                    dalam setiap proyek yang saya kerjakan.
+                </p>
+            </div>
+        </div>
+
+        <!-- Biodata Section -->
+        <div class="content-section" id="biodata">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-id-card"></i>
+                    Biodata Lengkap
+                </h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <span class="info-label">Nama:</span>
+                            Bunga Rahmadani
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <span class="info-label">Tanggal Lahir:</span>
+                            04 Oktober 2006
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="info-label">Tempat Lahir:</span>
+                            Rejosari
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-venus"></i>
+                        <div>
+                            <span class="info-label">Jenis Kelamin:</span>
+                            Perempuan
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-home"></i>
+                        <div>
+                            <span class="info-label">Alamat:</span>
+                            Jl. Lintas Sumatera, Kec. Pamenang, Kab. Merangin, Prov. Jambi
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="info-label">Email:</span>
+                            bungarahmadani267 <br>@gmail.com
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="info-label">Telepon:</span>
+                            +62 822-7970-3234
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="content-section" id="education">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Riwayat Pendidikan
+                </h2>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-level">Perguruan Tinggi</div>
+                        <div class="education-school">
+                            <a href="https://unp.ac.id/" target="_blank">Universitas Negeri Padang</a>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-level">Sekolah Menengah Kejuruan</div>
+                        <div class="education-school">
+                            <a href="https://dapo.dikdasmen.go.id/sekolah/4D8F30DE767960B8D271" target="_blank">SMK
+                                Negeri 10 Merangin</a>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-level">Sekolah Menengah Pertama</div>
+                        <div class="education-school">
+                            <a href="https://dapo.dikdasmen.go.id/sekolah/EAE014C659E57DC76601" target="_blank">SMP
+                                Negeri 19 Merangin</a>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-level">Sekolah Dasar</div>
+                        <div class="education-school">
+                            <a href="https://dapo.dikdasmen.go.id/sekolah/5A5E9649F8AAF49B5284" target="_blank">SD
+                                Negeri 133/VI Rejosari II</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="content-section" id="skills">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-cogs"></i>
+                    Keahlian & Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i><br>
+                        HTML & CSS
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i><br>
+                        JavaScript
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i><br>
+                        Responsive Design
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i><br>
+                        UI/UX Design
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-camera"></i><br>
+                        Photography
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-video"></i><br>
+                        Video Editing
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-microsoft"></i><br>
+                        MS Office
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-palette"></i><br>
+                        Content Creation
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="content-section" id="hobbies">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-heart"></i>
+                    Hobi & Minat
+                </h2>
+                <div class="hobbies-list">
+                    <div class="hobby-item">
+                        <i class="fas fa-tv"></i>
+                        Menonton Drama Korea
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-book-open"></i>
+                        Membaca Wattpad
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-music"></i>
+                        Mendengarkan Musik
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-camera"></i>
+                        Fotografi
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-pen-fancy"></i>
+                        Menulis Kreatif
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-gamepad"></i>
+                        Gaming
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Section -->
+        <div class="content-section" id="photo">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-camera"></i>
+                    Galeri Foto
+                </h2>
+                <div class="photo-container">
+                    <img src="/Biodata/Bungasky.jpg" alt="Foto Profil Bunga Rahmadani" class="main-photo">
+                    <p style="margin-top: 20px; color: #666; font-style: italic;">
+                        "Setiap foto menceritakan kisah, dan setiap kisah memiliki keindahannya sendiri."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="content-section" id="contact">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-envelope"></i>
+                    Hubungi Saya
+                </h2>
+                <p style="margin-bottom: 30px; color: #666; text-align: center;">
+                    Mari terhubung! Saya senang mendengar dari Anda dan selalu terbuka untuk kolaborasi atau diskusi
+                    menarik.
+                </p>
+                <div class="contact-grid">
+                    <a href="tel:+6282279703234" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Telepon</h4>
+                            <p style="width: 30px;">bungarahmadani267 <br>@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+6282279703234" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Telepon</h4>
+                            <p>+62 822-7970-3234</p>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/qr/6LZNCNUOXRJXO1" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>WhatsApp</h4>
+                            <p>Chat via WhatsApp</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/bungasky_?igsh=eHhxYWpyMHpjMTJ2" target="_blank"
+                        class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Instagram</h4>
+                            <p>@bungasky_</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
